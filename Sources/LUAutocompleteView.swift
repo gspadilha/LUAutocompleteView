@@ -3,7 +3,7 @@
 //  LUAutocompleteView
 //
 //  Created by Laurentiu Ungur on 24/04/2017.
-//  Copyright © 2017 Laurentiu Ungur. All rights reserved.
+//  Copyright Â© 2017 Laurentiu Ungur. All rights reserved.
 //
 
 /// Highly configurable autocomplete view that is attachable to any `UITextField`.
@@ -100,7 +100,7 @@ open class LUAutocompleteView: UIView {
     /** Initializes and returns a table view object having the given frame and style.
 
     - Parameters:
-        - frame: A rectangle specifying the initial location and size of the table view in its superview’s coordinates. The frame of the table view changes as table cells are added and deleted.
+        - frame: A rectangle specifying the initial location and size of the table view in its superviewâÂÂs coordinates. The frame of the table view changes as table cells are added and deleted.
         - style: A constant that specifies the style of the table view. See `UITableViewStyle` for descriptions of valid constants.
 
     - Returns: Returns an initialized `UITableView` object, or `nil` if the object could not be successfully initialized.
@@ -259,6 +259,6 @@ extension LUAutocompleteView: UITableViewDelegate {
             height = 0
         }
         textField?.text = elements[indexPath.row]
-        delegate?.autocompleteView(self, didSelect: elements[indexPath.row])
+        delegate?.autocompleteView(self, didSelect: elements[indexPath.row], indexPath.row)
     }
 }
